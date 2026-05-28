@@ -1,0 +1,8 @@
+---
+- name: create remote dirs
+  hosts: remote_targets
+  tasks:
+    - name: create the test directory
+      ansible.builtin.file:
+        path: test
+        state: directory

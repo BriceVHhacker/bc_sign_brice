@@ -1,0 +1,8 @@
+---
+- name: create dirs
+  hosts: localhost
+  tasks:
+    - name: create the test directory
+      ansible.builtin.file:
+        path: test
+        state: directory
